@@ -2,6 +2,28 @@
 
 n8n community node for Mixpost social media management API.
 
+## Requirements
+
+Before installing this n8n node, you need to have Mixpost installed and configured:
+
+### Mixpost Installation
+
+This node requires a working Mixpost installation with the REST API enabled. Choose one of the following:
+
+#### Option 1: Mixpost (Official)
+Install the official Mixpost application:
+- **Repository**: https://github.com/inovector/mixpost
+- **Documentation**: Follow the installation instructions in the repository
+- **Requirements**: PHP, Laravel, Database (MySQL/PostgreSQL)
+
+#### Option 2: Mixpost REST API Add-on
+If you already have Mixpost installed, add the REST API capability:
+- **Repository**: https://github.com/btafoya/mixpost-api
+- **Installation**: Composer package for existing Mixpost installations
+- **Purpose**: Adds REST API endpoints required by this n8n node
+
+**Note**: The Mixpost REST API Add-on is required for this n8n integration to function. Ensure your Mixpost instance has API access enabled and you have generated an access token.
+
 ## Installation
 
 ### Community Nodes (Recommended)
