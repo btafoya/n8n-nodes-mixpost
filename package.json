@@ -1,6 +1,6 @@
 {
   "name": "@btafoya/n8n-nodes-mixpost",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "n8n community node for Mixpost social media management API",
   "main": "index.js",
   "scripts": {
