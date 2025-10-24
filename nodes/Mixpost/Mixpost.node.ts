@@ -44,14 +44,17 @@ export class Mixpost implements INodeType {
 					{
 						name: 'Account',
 						value: 'accounts',
+						description: 'Manage connected social media accounts',
 					},
 					{
 						name: 'Media',
 						value: 'media',
+						description: 'Upload and manage media files',
 					},
 					{
 						name: 'Post',
 						value: 'posts',
+						description: 'Create and manage social media posts',
 					},
 				],
 				default: 'posts',
