@@ -1,6 +1,6 @@
-# n8n-nodes-mixpost
+# @btafoya/n8n-nodes-mixpost
 
-[![npm version](https://img.shields.io/npm/v/n8n-nodes-mixpost.svg)](https://www.npmjs.com/package/n8n-nodes-mixpost)
+[![npm version](https://img.shields.io/npm/v/@btafoya/n8n-nodes-mixpost.svg)](https://www.npmjs.com/package/@btafoya/n8n-nodes-mixpost)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This is an n8n community node that lets you use [Mixpost](https://github.com/inovector/mixpost) in your n8n workflows.
@@ -37,7 +37,7 @@ Install directly from n8n:
 
 1. Go to **Settings > Community Nodes** in your n8n instance
 2. Select **Install**
-3. Enter `n8n-nodes-mixpost`
+3. Enter `@btafoya/n8n-nodes-mixpost`
 4. Agree to the risks and install
 
 [Learn about community nodes](https://docs.n8n.io/integrations/community-nodes/installation/)
@@ -47,7 +47,7 @@ Install directly from n8n:
 Install via npm:
 
 ```bash
-npm install n8n-nodes-mixpost
+npm install @btafoya/n8n-nodes-mixpost
 ```
 
 ### Method 3: Local Development
@@ -68,7 +68,7 @@ npm run build
 # Link to n8n
 npm link
 cd $(npm root -g)/n8n
-npm link n8n-nodes-mixpost --legacy-peer-deps
+npm link @btafoya/n8n-nodes-mixpost --legacy-peer-deps
 
 # Restart n8n
 ```
@@ -183,9 +183,9 @@ Mixpost supports posting to:
 
 ## Version Compatibility
 
-| n8n-nodes-mixpost | n8n    | Mixpost API |
-|-------------------|--------|-------------|
-| 1.x               | >=1.0  | 1.x         |
+| @btafoya/n8n-nodes-mixpost | n8n    | Mixpost API |
+|----------------------------|--------|-------------|
+| 1.x                        | >=1.0  | 1.x         |
 
 ## Development
 
@@ -215,7 +215,7 @@ npm run dev      # Watch mode for development
 ## Troubleshooting
 
 ### Node doesn't appear in n8n
-- Verify the package is installed: `npm list n8n-nodes-mixpost`
+- Verify the package is installed: `npm list @btafoya/n8n-nodes-mixpost`
 - Restart n8n completely
 - Check n8n logs for errors
 
