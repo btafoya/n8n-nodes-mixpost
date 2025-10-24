@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/btafoya/n8n-nodes-mixpost.git"
+    "url": "git+https://github.com/btafoya/n8n-nodes-mixpost.git"
   },
   "homepage": "https://github.com/btafoya/n8n-nodes-mixpost",
   "license": "MIT",
