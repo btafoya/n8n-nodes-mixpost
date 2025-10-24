@@ -45,5 +45,11 @@
     "gulp": "^5.0.1",
     "n8n-workflow": "^1.114.0",
     "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "n8n-workflow": ">=1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

@@ -17,9 +17,9 @@
 
 Before you can use your Mixpost node, you need to install it in n8n. There are two methods:
 
-### Method A: Install via npm link (Development/Testing)
+### Method A: Install via npm link (Development/Testing) ✅
 
-**Use this method for local testing before publishing to npm.**
+**✅ FIXED: Use this method for local testing before publishing to npm.**
 
 ```bash
 # 1. Make sure you're in your project directory
@@ -31,17 +31,12 @@ npm run build
 # 3. Create a global npm link
 npm link
 
-# 4. Install in n8n
-# For n8n installed globally:
+# 4. Install in n8n (use --legacy-peer-deps to avoid dependency conflicts)
 cd $(npm root -g)/n8n
-npm link n8n-nodes-mixpost
-
-# OR if the above doesn't work:
-cd ~/.n8n
-mkdir -p nodes
-cd nodes
-npm link n8n-nodes-mixpost
+npm link n8n-nodes-mixpost --legacy-peer-deps
 ```
+
+**Important**: The `--legacy-peer-deps` flag is required to bypass peer dependency conflicts between n8n's dependencies and community nodes.
 
 ### Method B: Install via npm (After Publishing)
 
