@@ -56,22 +56,26 @@ cd ~/.n8n/nodes
 npm install n8n-nodes-mixpost
 ```
 
-### Method C: Manual Installation (Alternative)
+### Method C: Manual Installation (Recommended for Development)
 
-**If npm link doesn't work:**
+**✅ Use this method if npm link has dependency conflicts (most reliable):**
 
 ```bash
 # 1. Build the project
 cd /home/btafoya/projects/n8n-mixpost
 npm run build
 
-# 2. Create n8n nodes directory
-mkdir -p ~/.n8n/nodes
+# 2. Create n8n custom directory
+mkdir -p ~/.n8n/custom
 
-# 3. Copy built files
-cp -r dist/* ~/.n8n/nodes/
-cp package.json ~/.n8n/nodes/
+# 3. Copy built files to custom directory
+cp -r dist/* ~/.n8n/custom/
+cp package.json ~/.n8n/custom/
+
+# Note: n8n loads custom nodes from ~/.n8n/custom by default
 ```
+
+**Common Issue**: If you get npm dependency conflicts with `npm link`, use this method instead.
 
 ---
 
